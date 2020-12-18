@@ -3,10 +3,10 @@
   <entry>
     <title>text</title>
     <url>/2020/12/13/text/</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
   <div class="hbe-input-container">
   <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">Hey, password is required here.</label>
+    <label for="hbePass">这里需要密码。</label>
     <div class="bottom-line"></div>
   </div>
   <script id="hbeData" type="hbeData" data-hmacdigest="9fac2fd5b30fcec09b20773c215551990ced67607c16268cc7f19693493458c9">695c64875ce1eb6305c391679eaef09e0e40ad6f86bacd662cd5cb166cbbd6e4c91e68a2c64d6336990de648a7388874</script>
