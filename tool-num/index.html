@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="liao-fl">
   <meta name="keywords" content="">
-  <title>网站添加valine评论 - lflblog</title>
+  <title>文本添加序号 - lflblog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -33,8 +33,6 @@
     
   
 
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
 
 
@@ -63,7 +61,7 @@
 
 
 <body>
-  <header style="height: 70vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -155,6 +153,13 @@
           
           
           
+         
+          
+        
+          
+          
+          
+          
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="iconfont icon-books"></i>
@@ -169,14 +174,10 @@
                     
                     文本空格去除
                   </a>
-                
-                  
-                  
-                  
-                  <a class="dropdown-item" href="/tool-num/">
-                    
-                    文本添加序号
-                  </a>
+				  <a class="dropdown-item" href="/tool-num/">
+				    
+				    文本添加序号
+				  </a>
                 
               </div>
             </li>
@@ -205,54 +206,9 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="网站添加valine评论">
+            <span class="h2" id="subtitle" title="文本添加序号">
               
             </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-12-21 21:58" pubdate>
-        2020年12月21日 晚上
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      15 字
-    </span>
-  
-
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      1
-       分钟
-    </span>
-  
-
-  
-  
-    
-      <!-- 不蒜子统计文章PV -->
-      <span id="busuanzi_container_page_pv" style="display: none">
-        <i class="iconfont icon-eye" aria-hidden="true"></i>
-        <span id="busuanzi_value_page_pv"></span> 次
-      </span>
-    
-  
-</div>
 
             
           </div>
@@ -265,117 +221,45 @@
 
   <main>
     
-      
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-md">
-      <div class="container nopadding-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">网站添加valine评论</h1>
-            
-            <div class="markdown-body">
-              <div id="hexo-blog-encrypt" data-wpm="抱歉，这个密码看着不太对，请再试试。" data-whm="抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">请至关于页面联系站长获取密码。</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="d5cb2a32e3ca9bbc424e6436c68bc7b3fa735a767515c983642ae1b0e2d3503d">695c64875ce1eb6305c391679eaef09e41e274c1d663dfeb5f473d0e5133e1403b2ab10c121337aabfc62a42fec66caddb47f4babdd0b3d75b7f581a0f90e7f2b2c8456970024b78e6e9f9fa5f0602b7c5ab86ceaf3dd44fccec9843912a282d7b05c3644065e12315b0c011608de306fe305834e2782b6f5a580b9a8f801d68ee456b7f2be6c516b7daeb86ab7f47df9ca50851da6adcc57b2bd6f800e5a41ae35676b68d12996f98266589a340376929b6048a2e10fb3423ae91e5623b468390c93ecaaced6d2f33c2ceac999250ef1fb0838ff62b921c83df6c3913af7d68ab16e0e119199503e47f53af52331f4af65aab7a6a83c8c3e01e58ec079c3740585242ba2d155669acce2599b691775a2b8f517c7700aa07036ff5d0c8ce475bd26abfdb86a992e6947935b5d63357125e4357e8e777d6795900109d12bdca597a73e3289111f209e1892f7eb1ecad18cd26f8eb7c81015b049d519ddf9bae9467b026ad8d2dea35e9c8e2e0665adb18127033dbb0b5521f915c9080b7c312b6744c4e19afd0c1f89b66b81c68456ed3410a33d99a44fbe3b7a7d0918575a278fc775b85f61caf9b5f7b2de6029294b29306df2d14899e95f210724222adf42e578d528908879f31b5adef6d9ed92a74280d93c9f8ae65fe01c4aaeaf828d34fe6a9d5557912188d7cc6a148d9f3d2fd306d7bbdcc910766a065680819394eeb47d7cf58a069e410fbd386a5abb8f74d0723547d69a040454699aaf05288bf3429e3ac54210e08c913a6b48bbfd8c423a20cf373251a7d69e600f2e0b6a8fdfa338484c35efdb32923e93781a894c1e15d8376b9f3d66fc33f336154fa6b39bb875666392bc6c35a9acc42675cbf99e6f429012bc69ccefa9bf639ec02acf1843f86d5307a9a3cfd2dc66347f39cc2bd26569615318726fcb65a599929e4efed57f24fe97f7c4a7e1c82c0ee1b41f846244e94cd319e6286780631576df89068a6f30c7e78fd7a56883598ed74eccdcdf9500f530e65015587c9f7738f86d4e38343a4b0347fd9c392d82f84816d67c3e97d1e699bfb866cb59d1d44871d2406e735e7c4238a4668aae630d4f4b67979b773612da797062870434a3abf43805aa6f556fcb3e813dd5824ac567121a60c0c1413d1cef47c8280d56ff5982e0806746fa8389454f5547fd71b063b52ba36aa13326390f11b74b09260fefa6403be0fac225c6992d2db4b23ac92ca93107628bc90401e9635be291b5f3102fc2a4920c215287c42c5de5ef86240dea974732ee59c52f4a6e1e760f50de2929056f6c5d5c5de9177bc60ce891719bccd95d362a6edde7cc44e95cb2c24e7057cad4bbfbd56e91b0f3e56fc1e4922a2b711bdd425118931ca9131dc07b8bdd81a362d31a3a7e76531836739b74690a918829fa3a3f113711da828ac59aee3c3946b8ba722366712d0a93a1c8ab7381663811e8dfc9a9ed96c82430ae36706f92df9036f4dc13d9d53a4e02814ce1209d3a5026a3ed2d37b942e8823ea5ec3725480178e343a38e46fa6649129dd0f64a12992e06351830bd54404ec3b3b506ea57d36006fca2330d4adabd491e6b445e34a6899f36a41783e0138a33c1ab41d56fccac030be5811f47e83316350e5f60586a9b728f95eeb8a2539ac24dfb8d2d2c2b8e0e7c88064c98ce54dde1803cb7e1907d9c4446c58625949891334a5683f4dfa6c0d926d704898ea162b00a26eff0699891aaf936932d3afa0a489f277bb2fbfd5620bd172965fde8868b9e697775c5dc818500dd0e948b3cbd25d7032dfa7fb9be10d1c8aec2ea8f06ea4e2b01714b1663d8964473b3820c306d43ad1a198744fb8ce7cccbded7521998d04d1c2e7f2b06a82e3c4f6877d0c798798add13566511d6db2ef6d44f529764f0975461c1e36a3822dc5e7b79a3c5ea2047ef52813f0b2e0053bf12fa7a464db0c2992117f1fe90f6492f815fc6fd0ca293c45f46aacae6e07a3b577e0982fb302a7b76c1178bd45c0c9fea43c2d953930d601a38318ea7648d6e59ffd46e0e50d9577d830883c03a88e9a1d04e67675cac4611bcb2a683e9fcf15b57d7261b644dfea00add2a583e0f2dfc10105c37ebfb83a1994e3f7ee40192b22228efff525f72dd0d44ce2ff584c41043660bdee26c25bd44f62896267c82bd96cda882b962760e620a2e2bc32146b25ab6bf0c772fb650d867d65a3325bc954bb91f150c2731e153bb5e8444e88c203cc7b59a4684edf953c2553ab85f469e43d6f5ed64d231f44587b340f4a1d65677cbf76addc11712b4df4e3b6aad4fa43a1a16b81a3146b90cdc6e4cafe0fcb5313d4ae53e4bb8d209673ad7332f6c332011052a02e01bc75169ff71e239efcd7680f10d87d89da05589d0f17520cdf307a681d85a8fdb3a55edaef40e1ed579ced5141b0557d3c6997ed2d2f358f7d8c71678472a420465ca9603b16b5df421109f8af1a3311d48ca94c084c1c297f66a4ee5c6a5e2306d3183dee4d2698637657efd6a1d28ec5ef5792f40110178a38a96fcc593baf61f149153f3b064b9fa490ac5339e2291d8e75aeee90223c857d1da1c6eb6a5b0222c5e76912e502fcd4e2d8a23ea3de37f1d1513750209b392a762efb1851c272403432636e0640bc58f8c43dbf388643d44a1cbbaf97cb2a7c73bf8886fb160cd54fd0b28f5907cf89a2ef11124e6b157e507f629ef52a7df189002a4e4e0defe97ecff2304687b934938ba87a26fa74f8f968d83e39059a390b004b2e989d4cca9ac3a6dfed7d348c5895db7096048294b7107f2b4619eeb5e630f16658bd4a45116988a6da84dcc45af14e9eb962a72dadbfe056b41dd4125ebd7de75ae84b49c0eeba066382026bf628881c0cda01abb6a1b3c9fa345e6051acb96fab5625dc31d940644f782a02fd881178d6c5042e604ce7c765a8920ef9a5b1f5179901ab58d6edd906373be0c76089fbfaae70e9ceefd856117132d20abf763ab0525ec0a51a7b444191a65138f86534bdaf14c3edfc4ec4705c143c0d8be6697a98f685cc1902a7c835d55b81b2ef00b5bf05c366d5681f88f1de53aeab56584fdfbeedf80a9baba1c4f00ea1eb72a5de59fa1a358076c53eb2358d40e78a8964305c4e98b025165846c6c2c504f5802891d4df0934d87f97e5a0e7d3659210de39bd1c54dbe97ed86a244c12891280b8b24258d0e588b009f8c0395cf24e8b1ead0e1ba0f6506e709fa1ffbcd2e61f652e05fd383876d5e22e0ea397d0340ca948057c6051d958750a5b23a18407348f8c555ae81d5767ae0ea1c718af1ea4f3a2920e2686ca73d4269d60d9f0e42fb10fb0da2de993754680ed2f0a1b09dea4ddd9f85290cc44a3d4c3660d479d957622fc0a36ad1005756446d8c28780461fe2ec1845882a0dd879601df1a75225608fe26c611c39c2c439e0f4f6618bb9eb71ab84120e9598a851f61013c8a2d2b3655c44c9e9436f530e2f9a6814e44746c174430b94a9729b7aed3adbe5a1e917a2c272e5d975027fcac5b13f3fb1b6f2ad106185a11cdb731fb6db14ce94d98d4e715a7b1e459b91d1cacfec6efb87cb0ccdde4a6ef382717951f8a31dc2f56fb1fd1a37af87a7f7fd0173b580a96f73d00d0ed8d00545ddbca44ddae4b60964a060249c7083c0b51ae8a92f99a4b0c457ff224bd14f0010af9a8788e53aafcd3cf457e3e118adb2a54513ce79ac3c770b3412ecdd0444ce2a939e8244a05dab5b6d33ddaf45937e08b6a8e1a2ca603a0c6aa54b35219a323e9f568e16a2781c648e7f84</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/tags/hexo/">hexo</a>
-                    
+<div class="page-content">
+	
+  <div class="card mt-3">
+              <div class="card-header">文本添加序号</div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col">
+                          <label for="">输入文本信息：</label>
+                          <textarea rows="10" id="inputstr" name="InputString" class="form-control">Welcome
+Welcome
+Welcome</textarea>
+                      </div>
+                      <div class="col">
+                          <label for="">处理结果：</label>
+                          <textarea rows="10" id="outputstr" name="OutString" readonly="" class="form-control">1.Welcome
+2.Welcome
+3.Welcome</textarea>
+                      </div>
                   </div>
-                
               </div>
-              
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
-              
-              
-                <div class="post-prevnext row">
-                  <article class="post-prev col-6">
-                    
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2020/12/21/%E5%AE%9E%E7%8E%B0%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/">
-                        <span class="hidden-mobile">实现网站文章加密</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
+          </div>
+		  
+
+</div>
+
+              </div>
             </div>
-
-            
-              <!-- Comments -->
-              <article class="comments" id="comments">
-                
-                
-  <div id="vcomments"></div>
-  <script type="text/javascript">
-    Fluid.utils.waitElementVisible('vcomments', function() {
-      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
-        new Valine({
-          el: "#vcomments",
-          app_id: "4Ydotyck32aJVRA0CIPTKA1J-gzGzoHsz",
-          app_key: "Av3A64m5LzHcpPoRfQARe72A",
-          placeholder: "说点什么",
-          path: window.location.pathname,
-          avatar: "robohash",
-          meta: ["nick","mail","link"],
-          pageSize: "10",
-          lang: "zh-CN",
-          highlight: false,
-          recordIP: false,
-          serverURLs: "https://4ydotyck.lc-cn-n1-shared.com",
-        });
-      });
-    });
-  </script>
-  <noscript>Please enable JavaScript to view the
-    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
-  </noscript>
-
-
-              </article>
-            
-          </article>
+          </div>
         </div>
       </div>
-    </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
     
 
     
@@ -513,11 +397,7 @@
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
 
 
 
@@ -568,7 +448,12 @@
 
 
 
-
+<script src="js/public.js"></script>
+		  <script>
+		      $(function() {
+		          AH888.lrnum();
+		      });
+		  </script>
 
   
 
