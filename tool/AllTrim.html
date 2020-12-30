@@ -17,9 +17,23 @@
   <meta name="description" content="">
   <meta name="author" content="liao-fl">
   <meta name="keywords" content="">
-  <title>标签 - testTag2 - lflblog</title>
+  <title>去除文本空格 - lflblog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 
@@ -47,7 +61,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -153,7 +167,7 @@
                     
                     文本空格去除
                   </a>
-                
+                                  
                   
                   
                   
@@ -161,7 +175,7 @@
                     
                     文本添加序号
                   </a>
-                
+                                  
                   
                   
                   
@@ -197,7 +211,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="标签 - testTag2">
+            <span class="h2" id="subtitle" title="去除文本空格">
               
             </span>
 
@@ -221,25 +235,28 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 1 篇文章</p>
-  <hr>
-  
-  
-    
-      
-      <p class="h5">2020</p>
-    
-    <a href="/2020/12/13/text/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">test</span>
-      <time style="float: right;">12-13</time>
-    </a>
-  
+<div class="page-content">
+  <div class="card mt-3">
+  				<div class="card-header">去除文本所有空格</div>
+  				<div class="card-body">
+  					<div class="row">
+  						<div class="col">
+  							<label for="inputstr">输入文本信息：</label>
+  							<textarea rows="10" id="inputstr" name="InputString" class="form-control"> Wel come
+  Wel come
+Wel come</textarea>
+  						</div>
+  						<div class="col">
+  							<label for="neirong">处理结果：</label>
+  							<textarea rows="10" id="outputstr" name="OutString" readonly="" class="form-control">Welcome
+Welcome
+Welcome</textarea>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+
 </div>
-
-
-
-
 
               </div>
             </div>
@@ -387,6 +404,8 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
 
 
   <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
@@ -433,7 +452,38 @@
 
 
 
+		<script>
+			$(function() {
+				$("#inputstr").keyup(function() {
+					//$("#outputstr").val($(this).val());
+					var str = $(this).val();
+					var getArr = str.split("\n");
+					var strreverse = "";
+					for (var i = 0; i < getArr.length; i++) {
+						strreverse = strreverse + getArr[i].replace(/[ ]/g, "") + "\n";
+					}
 
+					$("#outputstr").val(strreverse);
+				});
+
+				$('textarea').each(function(index, element) {
+					var $element = $(element);
+					var defaultValue = $element.val();
+					$element.focus(function() {
+						var actualValue = $element.val();
+						if (actualValue == defaultValue) {
+							$element.val('');
+						}
+					});
+					$element.blur(function() {
+						var actualValue = $element.val();
+						if (!actualValue) {
+							$element.val(defaultValue);
+						}
+					});
+				});
+			});
+		</script>
   
 
   
