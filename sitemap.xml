@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://zyxlfl.com/2020/12/21/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/</loc>
+    <loc>http://zyxlfl.com/2020/12/21/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/</loc>
     
     <lastmod>2020-12-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/2020/12/21/%E5%AE%9E%E7%8E%B0%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</loc>
+    <loc>http://zyxlfl.com/2020/12/21/%E5%AE%9E%E7%8E%B0%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</loc>
     
     <lastmod>2020-12-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/2020/12/21/%E7%AE%80%E5%8D%95%E7%9A%84%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</loc>
+    <loc>http://zyxlfl.com/2020/12/21/%E7%AE%80%E5%8D%95%E7%9A%84%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</loc>
     
     <lastmod>2020-12-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/2020/12/21/%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA/</loc>
+    <loc>http://zyxlfl.com/2020/12/21/%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA/</loc>
     
     <lastmod>2020-12-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/2020/12/13/text/</loc>
+    <loc>http://zyxlfl.com/2020/12/13/text/</loc>
     
     <lastmod>2020-12-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/about/index.html</loc>
+    <loc>http://zyxlfl.com/about/index.html</loc>
     
     <lastmod>2020-12-14</lastmod>
     
@@ -45,7 +45,7 @@
   
 
   <url>
-    <loc>https://zyxlfl.com/</loc>
+    <loc>http://zyxlfl.com/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -53,21 +53,21 @@
 
   
   <url>
-    <loc>https://zyxlfl.com/tags/testTag1/</loc>
+    <loc>http://zyxlfl.com/tags/testTag1/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/tags/testTag2/</loc>
+    <loc>http://zyxlfl.com/tags/testTag2/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/tags/hexo/</loc>
+    <loc>http://zyxlfl.com/tags/hexo/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -76,14 +76,14 @@
 
   
   <url>
-    <loc>https://zyxlfl.com/categories/%E6%B5%8B%E8%AF%95/</loc>
+    <loc>http://zyxlfl.com/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zyxlfl.com/categories/%E6%B5%8B%E8%AF%95/test/</loc>
+    <loc>http://zyxlfl.com/categories/%E6%B5%8B%E8%AF%95/test/</loc>
     <lastmod>2021-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
