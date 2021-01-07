@@ -111,4 +111,23 @@
         <tag>sitemap</tag>
       </tags>
   </entry>
+  <entry>
+    <title>将域名解析到github仓库地址</title>
+    <url>/2021/01/07/%E5%B0%86%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0github%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80/</url>
+    <content><![CDATA[<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>实现不再通过繁杂的github地址githubname.github.io访问仓库，通过简短的域名访问，方便记忆，本篇就讲讲怎么将域名解析到github地址，实现域名访问仓库。</p>
+<h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><p>1.国内的域名服务商有腾讯云，还有阿里云的等。下面以阿里云的为例：<br>2.购买了自己心仪的域名后，进入阿里云的管理控制台-域名与网站-域名就可以看到购买的域名此时的域名状态是未实名认证的，然后就是实名认证（一般需要2小时左右）。</p>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>1.首先获取自己 github 的二级域名的 IP地址，windows 下直接在 cmd 里 Ping 一下自己的github仓库地址就会得到 IP 地址<br>2.下面通过 DNS域名解析将购买的域名指向 github 的二级域名：<code>username.github.io</code>，点击确定即可，进入阿里云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置，点击添加记录，将得到的 IP 地址填到记录值一栏，记录类型为：A，主机记录为：@，线路为默认，点击确定即可<br><img src="https://s3.ax1x.com/2021/01/07/smbBct.jpg"><br>3.再次点击添加记录，记录类型为：CNAME，主机记录为：www，线路默认，记录值为你的仓库地址：<code>username.github.io</code>，点击确定即可<br><img src="https://s3.ax1x.com/2021/01/07/smq2qK.jpg"></p>
+<h3 id="设置CNAME"><a href="#设置CNAME" class="headerlink" title="设置CNAME"></a>设置CNAME</h3><p>1.在你的hexo项目下，source 文件夹下面创建 CNAME 文件，没有后缀名的。<br><img src="https://s3.ax1x.com/2021/01/07/smLkZT.jpg"><br>1.在里面写上购买的域名。<br><img src="https://s3.ax1x.com/2021/01/07/smLiLV.jpg"></p>
+<h3 id="github设置"><a href="#github设置" class="headerlink" title="github设置"></a>github设置</h3><p>1.在 github 上面，打开 username.github.io 项目的（Settings）设置，一直往下划，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。<br><img src="https://s3.ax1x.com/2021/01/07/smLqp9.jpg"><br>2.找到GitHub Pages的 Custom domain，填上域名，勾选上https选项即可。<br><img src="https://s3.ax1x.com/2021/01/07/smLHfJ.jpg"><br>3.到此，一切就准备就绪了，现在就可以通过简洁的域名访问我们的仓库了。</p>
+<h3 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h3><p>1.有错误请评论指出，谢谢，希望此文章能够帮助到烂记性的自己和正在观看此博客的你。</p>
+]]></content>
+      <categories>
+        <category>github</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>阿里云</tag>
+        <tag>域名</tag>
+      </tags>
+  </entry>
 </search>

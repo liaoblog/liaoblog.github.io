@@ -17,9 +17,25 @@
   <meta name="description" content="">
   <meta name="author" content="liao-fl">
   <meta name="keywords" content="">
-  <title>分类 - lflblog</title>
+  <title>将域名解析到github仓库地址 - lflblog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -47,7 +63,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -205,9 +221,54 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="分类">
+            <span class="h2" id="subtitle" title="将域名解析到github仓库地址">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-07 22:34" pubdate>
+        2021年1月7日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      524 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      5
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
 
             
           </div>
@@ -220,170 +281,126 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-
-
-
-
-
-
-<div class="category-list">
-  
-  
-  
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjbfvc220004dou6fmq0e2e0" role="tab" data-toggle="collapse" href="#collapse-ckjbfvc220004dou6fmq0e2e0"
-        aria-expanded="false"
-      >
-        测试
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%B5%8B%E8%AF%95/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjbfvc220004dou6fmq0e2e0" class="collapse in " role="tabpanel"
-       aria-labelledby="heading-ckjbfvc220004dou6fmq0e2e0">
-    
-  
-  
-    
-    
-    <div class="category-sub row">
-      <a
-        class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjbfvc2i000adou6er5ibs3h" role="tab" data-toggle="collapse" href="#collapse-ckjbfvc2i000adou6er5ibs3h"
-        aria-expanded="false"
-      >
-        test
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%B5%8B%E8%AF%95/test/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjbfvc2i000adou6er5ibs3h" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckjbfvc2i000adou6er5ibs3h">
-    
-    
-    
       
-      
-        <a href="/2020/12/13/text/" class="list-group-item list-group-item-action">
-          <span class="category-post">test</span>
-        </a>
-      
-    
-  </div>
 
-        
-      </div>
-    </div>
-  
-  </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">将域名解析到github仓库地址</h1>
+            
+            <div class="markdown-body">
+              <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>实现不再通过繁杂的github地址githubname.github.io访问仓库，通过简短的域名访问，方便记忆，本篇就讲讲怎么将域名解析到github地址，实现域名访问仓库。</p>
+<h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><p>1.国内的域名服务商有腾讯云，还有阿里云的等。下面以阿里云的为例：<br>2.购买了自己心仪的域名后，进入阿里云的管理控制台-域名与网站-域名就可以看到购买的域名此时的域名状态是未实名认证的，然后就是实名认证（一般需要2小时左右）。</p>
+<h3 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h3><p>1.首先获取自己 github 的二级域名的 IP地址，windows 下直接在 cmd 里 Ping 一下自己的github仓库地址就会得到 IP 地址<br>2.下面通过 DNS域名解析将购买的域名指向 github 的二级域名：<code>username.github.io</code>，点击确定即可，进入阿里云的管理控制台-域名与网站-云解析 DNS，进入域名的解析设置，点击添加记录，将得到的 IP 地址填到记录值一栏，记录类型为：A，主机记录为：@，线路为默认，点击确定即可<br><img src="https://s3.ax1x.com/2021/01/07/smbBct.jpg" srcset="/img/loading.gif"><br>3.再次点击添加记录，记录类型为：CNAME，主机记录为：www，线路默认，记录值为你的仓库地址：<code>username.github.io</code>，点击确定即可<br><img src="https://s3.ax1x.com/2021/01/07/smq2qK.jpg" srcset="/img/loading.gif"></p>
+<h3 id="设置CNAME"><a href="#设置CNAME" class="headerlink" title="设置CNAME"></a>设置CNAME</h3><p>1.在你的hexo项目下，source 文件夹下面创建 CNAME 文件，没有后缀名的。<br><img src="https://s3.ax1x.com/2021/01/07/smLkZT.jpg" srcset="/img/loading.gif"><br>1.在里面写上购买的域名。<br><img src="https://s3.ax1x.com/2021/01/07/smLiLV.jpg" srcset="/img/loading.gif"></p>
+<h3 id="github设置"><a href="#github设置" class="headerlink" title="github设置"></a>github设置</h3><p>1.在 github 上面，打开 username.github.io 项目的（Settings）设置，一直往下划，然后在 GitHub Pages的 Custom domain设置里填上购买的域名。<br><img src="https://s3.ax1x.com/2021/01/07/smLqp9.jpg" srcset="/img/loading.gif"><br>2.找到GitHub Pages的 Custom domain，填上域名，勾选上https选项即可。<br><img src="https://s3.ax1x.com/2021/01/07/smLHfJ.jpg" srcset="/img/loading.gif"><br>3.到此，一切就准备就绪了，现在就可以通过简洁的域名访问我们的仓库了。</p>
+<h3 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h3><p>1.有错误请评论指出，谢谢，希望此文章能够帮助到烂记性的自己和正在观看此博客的你。</p>
 
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjljlpun0001jcu66vxj8fxi" role="tab" data-toggle="collapse" href="#collapse-ckjljlpun0001jcu66vxj8fxi"
-        aria-expanded="false"
-      >
-        hexo
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/hexo/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjljlpun0001jcu66vxj8fxi" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckjljlpun0001jcu66vxj8fxi">
-    
-    
-    
-      
-      
-        <a href="/2021/01/06/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%B0%B7%E6%AD%8C%E6%94%B6%E5%BD%95%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99/" class="list-group-item list-group-item-action">
-          <span class="category-post">如何让谷歌收录你的网站</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjmzscsi00006wu677c41l6a" role="tab" data-toggle="collapse" href="#collapse-ckjmzscsi00006wu677c41l6a"
-        aria-expanded="false"
-      >
-        github
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/github/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjmzscsi00006wu677c41l6a" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckjmzscsi00006wu677c41l6a">
-    
-    
-    
-      
-      
-        <a href="/2021/01/07/%E5%B0%86%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0github%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80/" class="list-group-item list-group-item-action">
-          <span class="category-post">将域名解析到github仓库地址</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-</div>
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/github/">github</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/github/">github</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E9%98%BF%E9%87%8C%E4%BA%91/">阿里云</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9F%9F%E5%90%8D/">域名</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/01/06/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%B0%B7%E6%AD%8C%E6%94%B6%E5%BD%95%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99/">
+                        <span class="hidden-mobile">如何让谷歌收录你的网站</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "4Ydotyck32aJVRA0CIPTKA1J-gzGzoHsz",
+          app_key: "Av3A64m5LzHcpPoRfQARe72A",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "robohash",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "https://4ydotyck.lc-cn-n1-shared.com",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -521,9 +538,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
