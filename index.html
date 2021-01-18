@@ -79,59 +79,38 @@
           
           
           
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                文章
               </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/">
-                <i class="iconfont icon-link-fill"></i>
-                友链
-              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    分类
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags-fill"></i>
+                    标签
+                  </a>
+                
+              </div>
             </li>
           
         
@@ -141,7 +120,7 @@
           
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="iconfont icon-books"></i>
+                <i class="iconfont icon-cliplist"></i>
                 小工具
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -179,6 +158,30 @@
                   </a>
                 
               </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
             </li>
           
         
@@ -375,7 +378,8 @@
           
             
           
-          该文章已被加密。
+          修改fluid主题配置文件1.进入fluid主题下的配置文件(config.yml)2.找到comments配置，将enable的值改为true，type的值改为valine3.往下划，找到valine的配置，可见appid与appkey以及serverURLs此3处留空
+前网官网注册获取appid与appkey以及serverURLs点击前往注册LeanCloud1.注册完毕后，进入控制台后点击
         </a>
       </p>
 
@@ -422,7 +426,10 @@
           
             
           
-          该文章已被加密。
+          安装encrypt插件1.在博客目录下执行下面的指令安装encrypt
+1cnpm install --save hexo-blog-encrypt
+2.安装完成后，在package.json文件的dependecies依赖中可以看到encrypt插件，证明安装成功
+123    &quot;dependencies&quot;: &#123;    &quot;hexo-blog-encrypt
         </a>
       </p>
 
@@ -469,7 +476,8 @@
           
             
           
-          该文章已被加密。
+          修改fluid主题配置文件1.进入fluid主题下的配置文件(config.yml)2.找到页脚footer部分配置3.往下翻，找到 statistics 的配置，将 enable 的值改为 true 即可
+可能会发生的问题以及解决方法1.初始统计数值过大，此为正常现在，在本地访问时，你看到的数值将会是这样，你只需要提交到github仓库或者是你的服务器上即可解决这个问题2.访问量与访客数同比增加
         </a>
       </p>
 
@@ -516,7 +524,8 @@
           
             
           
-          该文章已被加密。
+          修改footer.ejs文件1.文件位于themes/fluid/layout/partial ,你只需要在里面加一个div标签就可以了，里面原本是有两个div标签，你放的顺序影响着显示的顺序。直接将下列代码复制即可
+123456789101112131415161718192021222324252627282930&lt;div&gt;     &lt;span id=&quot;timeDa
         </a>
       </p>
 
@@ -600,7 +609,183 @@
     </article>
   </div>
 
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2020/08/10/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" target="_self">
+          <img src="https://i.loli.net/2020/08/10/COGXTq4vUoJ9Zgn.jpg" srcset="/img/loading.gif" alt="软件分享">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/10/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">软件分享</a>
+      </h1>
 
+      <p class="index-excerpt">
+        <a href="/2020/08/10/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">
+          
+          
+            
+          
+          标题简介《本站提供所有软件-工具-文本-代码，无任何商业性质，均免费提供，不收取任何费用，因个人使用者因素造成的不良影响和后果均与本站以及本站长无关，如有侵权请联系删除！》本帖放置以某度网盘链接形式的实用软件以及实用工具
+本贴均为永久链接，如遇链接失效或文件损坏请移步关于页面添加我v联系我获取
+pe重装工具程序一键创建U盘pe系统，自定义程度高，内置重装系统工具，简洁无广告，系统更纯净:链接：ht
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-10 15:39" pubdate>
+              2020-08-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">软件分享</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">软件分享</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2020/08/09/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" target="_self">
+          <img src="https://i.loli.net/2020/08/09/KlEi9jzNkutsmJy.png" srcset="/img/loading.gif" alt="个人博客搭建记录日志-更换主题">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/09/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">个人博客搭建记录日志-更换主题</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/09/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/">
+          
+          
+            
+          
+          操作步骤1.登录到https://hexo.io/themes 寻找到合适的开源主题2.点击跳转到github下载源码zip3.解压，放到 C:\用户\你的用户名\blog\themes 下 4.打开blog目录下的 _config.yml 配置文件，打开找到 theme: 在其后写放到themes文件夹下的主题名字5.打开 Git-Bash 输入 cd blog 进入目录6.输入 hexo ch
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-09 11:10" pubdate>
+              2020-08-09
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/hexo/">hexo</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2020/08/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-github%E6%89%98%E7%AE%A1/" target="_self">
+          <img src="https://i.loli.net/2020/08/09/7zsXWJlmVvfOLk3.jpg" srcset="/img/loading.gif" alt="个人博客搭建记录日志-github托管">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-github%E6%89%98%E7%AE%A1/">个人博客搭建记录日志-github托管</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-github%E6%89%98%E7%AE%A1/">
+          
+          
+            
+          
+          操作步骤1.登录github创建储存库，名称：github用户名.github.io2.打开 Git-Bash 输入 cd blog进入目录3.安装github部署插件，输入 cnpm install –save hexo-deployer-git 回车4.打开配置_config.yml文件，路径：blog目录下5.打开后，文件的最底部，在type:后面加上git（type: git）—冒号后面要
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-07 14:20" pubdate>
+              2020-08-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/hexo/">hexo</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
 
 
 
