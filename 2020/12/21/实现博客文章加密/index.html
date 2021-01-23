@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://s3.ax1x.com/2020/12/20/raZ9hT.jpg">
-  <link rel="icon" type="image/png" href="https://s3.ax1x.com/2020/12/20/raZ9hT.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.jsdelivr.net/gh/liaoblog/img@master/%E7%BD%91%E7%AB%99%E5%A4%B4%E5%9B%BE/logo.jpg">
+  <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/liaoblog/img@master/%E7%BD%91%E7%AB%99%E5%A4%B4%E5%9B%BE/logo.jpg">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -219,7 +219,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('https://s3.ax1x.com/2020/12/20/raV0mR.jpg') no-repeat center center;
+         style="background: url('https://cdn.jsdelivr.net/gh/liaoblog/img@master/%E7%BD%91%E7%AB%99%E5%A4%B4%E5%9B%BE/default1.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -303,7 +303,7 @@
 <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs 1c">    <span class="hljs-string">&quot;dependencies&quot;</span>: &#123;<br>    <span class="hljs-string">&quot;hexo-blog-encrypt&quot;</span>: <span class="hljs-string">&quot;^3.0.13&quot;</span>,<br>&#125;<br></code></pre></td></tr></table></figure>
 <h3 id="加密文章设置-password属性"><a href="#加密文章设置-password属性" class="headerlink" title="加密文章设置(password属性)"></a>加密文章设置(password属性)</h3><p>1.将”password”字段添加到文章信息头部</p>
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">title</span>: 博客标题<br><span class="hljs-attribute">date</span>: <span class="hljs-number">2020</span>-<span class="hljs-number">11</span>-<span class="hljs-number">07</span> <span class="hljs-number">23</span>:<span class="hljs-number">05</span>:<span class="hljs-number">38</span><br><span class="hljs-attribute">password</span>: <span class="hljs-number">123</span><br></code></pre></td></tr></table></figure>
-<h3 id="执行hexo-g-amp-amp-hexo-s后，便可查看"><a href="#执行hexo-g-amp-amp-hexo-s后，便可查看" class="headerlink" title="执行hexo g&amp;&amp;hexo s后，便可查看"></a>执行hexo g&amp;&amp;hexo s后，便可查看</h3><p><img src="https://s3.ax1x.com/2020/12/21/rBA8ER.jpg" srcset="/img/loading.gif"><br>1.输入密码错误后，界面提示<br><img src="https://s3.ax1x.com/2020/12/21/rBAKvF.jpg" srcset="/img/loading.gif"></p>
+<h3 id="执行hexo-g-amp-amp-hexo-s后，便可查看"><a href="#执行hexo-g-amp-amp-hexo-s后，便可查看" class="headerlink" title="执行hexo g&amp;&amp;hexo s后，便可查看"></a>执行hexo g&amp;&amp;hexo s后，便可查看</h3><p><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/rBA8ER.jpg" srcset="/img/loading.gif"><br>1.输入密码错误后，界面提示<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/rBAKvF.jpg" srcset="/img/loading.gif"></p>
 <h3 id="对要加密的文章-，修改文章信息头如下"><a href="#对要加密的文章-，修改文章信息头如下" class="headerlink" title="对要加密的文章 ，修改文章信息头如下"></a>对要加密的文章 ，修改文章信息头如下</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">password:</span> <span class="hljs-number">1234</span><br><span class="hljs-attr">abstract:</span> <span class="hljs-string">这里有东西被加密了，需要输入密码查看哦。</span><br><span class="hljs-attr">message:</span> <span class="hljs-string">您好，这里需要密码。</span><br><span class="hljs-attr">wrong_pass_message:</span> <span class="hljs-string">抱歉，这个密码看着不太对，请再试试。</span><br><span class="hljs-attr">wrong_hash_message:</span> <span class="hljs-string">抱歉，这个文章不能被纠正，不过您还是能看看解密后的内容。</span><br></code></pre></td></tr></table></figure>
 <h3 id="encrypt具体配置文件"><a href="#encrypt具体配置文件" class="headerlink" title="encrypt具体配置文件"></a>encrypt具体配置文件</h3><p>1.文件位于blog\node_modules\hexo-blog-encrypt下，可自行修改配</p>
 <h3 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h3><p>1.有错误请评论指出，谢谢，希望文章能够帮助到烂记性的自己和正在观看此博客的你。</p>
