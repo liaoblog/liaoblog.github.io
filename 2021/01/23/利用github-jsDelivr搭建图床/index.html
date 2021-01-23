@@ -17,9 +17,25 @@
   <meta name="description" content="">
   <meta name="author" content="liao-fl">
   <meta name="keywords" content="">
-  <title>归档 - lflblog</title>
+  <title>利用github+jsDelivr搭建图床 - lflblog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -47,7 +63,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -208,9 +224,54 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="利用github+jsDelivr搭建图床">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-01-23 15:57" pubdate>
+        2021年1月23日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      11
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
 
             
           </div>
@@ -223,64 +284,134 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 13 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2020</p>
-    
-    <a href="/2020/08/09/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">个人博客搭建记录日志-更换主题</span>
-      <time style="float: right;">08-09</time>
-    </a>
-  
-    
-    <a href="/2020/08/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-github%E6%89%98%E7%AE%A1/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">个人博客搭建记录日志-github托管</span>
-      <time style="float: right;">08-07</time>
-    </a>
-  
-    
-    <a href="/2020/08/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">个人博客搭建记录日志-基础搭建</span>
-      <time style="float: right;">08-07</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">利用github+jsDelivr搭建图床</h1>
+            
+            <div class="markdown-body">
+              <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>图床是什么？图床就是图片存放的地址，用来节省服务器的资源，也可以变相的提升网站加载速度<br><br>你是否正在遭遇以下问题：<br>1.在用静态博客网站写文章，图片不知怎么保存，保存在哪里<br>2.网上复制的心仪图片链接，用着用着某一天就失效了<br>3.特意花钱租个云服务器托管图片，划不来，而且上传操作好繁琐<br>4.市面上形形色色的免费图床，但都有时间期限，要么就是速度慢，存储空间小，有的还限流量<br><br>现在可以利用jsdelivr加速github仓库来实现图床，无论是否使用jsdelivr你都可以利用github搭建一个图床，但缺点是国内加载速度非常慢，严重影响我们的需求，为此我们还需要利用jsdelivr的cdn加速，jsdelivr在国内的节点有上百个，这样我们就得到了一个访问速度贼快，且免费，空间无限的一个图床。<br><br>下面就是教程了，有疑问有错误请评论指出，谢谢，仅以此文章帮助烂记性的自己和正在观看此博客的你。</p>
+<h3 id="新建github仓库用来存储图片"><a href="#新建github仓库用来存储图片" class="headerlink" title="新建github仓库用来存储图片"></a>新建github仓库用来存储图片</h3><p>1.登录你的 github 账号，<a target="_blank" rel="noopener" href="https://github.com/">点击跳转登录</a>，右上角加号处点击此选项，创建一个新的仓库<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/gt.jpg" srcset="/img/loading.gif"><br>2.详细设置<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/gtt.png" srcset="/img/loading.gif"><br>3.此仓库你可以上传你的图片，用来达到存储的目的</p>
+<h3 id="利用jsdelivr加速访问"><a href="#利用jsdelivr加速访问" class="headerlink" title="利用jsdelivr加速访问"></a>利用jsdelivr加速访问</h3><p>1.现在我们直接访问图片的链接时，速度是很慢的，所以我们需要利用jsdelivr加速访问我们的图片<br>2.假设我们的仓库中有一张<code>test.png</code>的图片<br>3.使用github的链接直接访问是这样访问的<code>https://github.com/github用户名/仓库名/raw/master/test.png</code>，经过测试得知，加载速度是非常不理想的，此时将图片链接放入我们的网站内，将会导致网页加载速度十分缓慢，图片会一直在加载状态<br>4.现在使用jsdelivr访问非常简单，即把图片地址链接域名改为 CDN 的域名，是这样的访问格式，<code>https://cdn.jsdelivr.net/gh/github用户名/仓库名@master/test.png</code>，经过测试，现在的访问速度已经起飞了</p>
+<h3 id="利用PicGo工具便捷管理图片"><a href="#利用PicGo工具便捷管理图片" class="headerlink" title="利用PicGo工具便捷管理图片"></a>利用PicGo工具便捷管理图片</h3><p>1.前往picgo的GitHub仓库下载此工具，<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">点击前往下载</a>，如果下载速度太慢，科学上网下载会快一点，下载好后安装即可<br>2.然后，在 github 上创建一个 token1，点击右上角账号上的 settings<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/1714.png" srcset="/img/loading.gif"><br>3.然后左侧点击 developer settings ，再点击 personal access tokens ，然后点击 generate new token<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/1714084-20201031122011123-386794180.png" srcset="/img/loading.gif"><br>4.Note 用来说明你创建 token 的用途，然后 scopes 只需要选 repo 的所有选项即可<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/1714084-20201031122011409-863250092.png" srcset="/img/loading.gif"><br>5.最后拉到底部，点击 generate token ，即可成功<br>6.找个地方记下这一串 token，等会需要用到。（如果没有记住，等再查看时就只能重新生成了）<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/1714084-20201031122011850-1358770775.png" srcset="/img/loading.gif"><br>7.打开picgo工具进行配置<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210123171058.jpg" srcset="/img/loading.gif"></p>
+<ul>
+<li>在 PicGo 中，找到图床设置 -&gt; GitHub图床。</li>
+<li>仓库名即为你的github账号/图片仓库名</li>
+<li>分支名就用默认的 master</li>
+<li>Token 就填写刚才我们生成的 Token</li>
+<li>存储路径如果需要指定子目录可以填写例如 img/ 。我这里没有填，就会上传到我图片仓库的根目录。</li>
+<li>自定义域名就填写 jsDelivr 的域名，<code>https://cdn.jsdelivr.net/gh/github用户名/仓库名@master</code></li>
+<li>最后设为默认图床，下次在 typora 上传图片就会自动上传到 github 图床了</li>
+</ul>
+<h3 id="总结-便捷使用方法"><a href="#总结-便捷使用方法" class="headerlink" title="总结-便捷使用方法"></a>总结-便捷使用方法</h3><p>1.点击上传图片，此时如果你上面的配置正确，上传的图片将会同步至github仓库内<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210123171400.jpg" srcset="/img/loading.gif"><br>2.点击相册，可见你的图片，点击此按钮，即可复制图片链接<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210123171422.jpg" srcset="/img/loading.gif"><br>3.你也可以指定上传后的链接格式<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210123171756.jpg" srcset="/img/loading.gif"><br>4.得到链接后，你就可以尽情的使用了，加载速度十分迅速，白嫖真香，以后想要存图片就上传，接着复制链接出来使用，非常的方便</p>
 
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/archives/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
-      ele.href += '#board';
-    }
-  </script>
-
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/github/">github</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/github/">github</a>
+                    
+                      <a class="hover-with-bg" href="/tags/jsDelivr/">jsDelivr</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%9B%BE%E5%BA%8A/">图床</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/01/19/js%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E9%A3%98%E9%9B%AA/">
+                        <span class="hidden-mobile">js实现网站飘雪</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "4Ydotyck32aJVRA0CIPTKA1J-gzGzoHsz",
+          app_key: "Av3A64m5LzHcpPoRfQARe72A",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "robohash",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "https://4ydotyck.lc-cn-n1-shared.com",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -418,9 +549,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
