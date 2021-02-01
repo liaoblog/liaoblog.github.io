@@ -17,9 +17,25 @@
   <meta name="description" content="一名编程爱好者，学习技术，分享技术">
   <meta name="author" content="liao-fl">
   <meta name="keywords" content="">
-  <title>分类 - lflblog</title>
+  <title>更换可道云储存地址为挂载硬盘 - lflblog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -47,7 +63,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -208,9 +224,54 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="分类">
+            <span class="h2" id="subtitle" title="更换可道云储存地址为挂载硬盘">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-02-01 20:22" pubdate>
+        2021年2月1日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      447 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      5
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
 
             
           </div>
@@ -223,319 +284,126 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">更换可道云储存地址为挂载硬盘</h1>
+            
+            <div class="markdown-body">
+              <p>自建服务器的空间有限，玩客云有usb接口，我接了一个u盘，硬盘也是可以的，下面开始操作步骤（此文章为自建服务器更换储存设备教程，对云服务器使用者并无帮助）</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.需要一个外接储存设备<br>2.储存设备必须是ext4格式的，linux系统必须是ext格式，否则将会挂载失败，普通u盘或是硬盘不是此格式，需要使用硬盘格式工具进行修改</p>
+<h3 id="挂载硬盘"><a href="#挂载硬盘" class="headerlink" title="挂载硬盘"></a>挂载硬盘</h3><p>1.插入硬盘到设备上<br>2.进入ssh，连接上服务器<br>3.查看有哪些储存设备，ssh键入<code>fdisk -l</code><br>4.可以看到我插入的硬盘是14g，所以是这个，名称叫<code>dev/sdc1</code><br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201204242.jpg" srcset="/img/loading.gif"><br>5.将储存设备挂载到服务器上，ssh键入<code>sudo mount /dev/sdc1/mnt</code><br>6.测试是否挂载成功<code>cd /mnt</code>，成功进入即为挂载成功</p>
+<h3 id="更换储存地址"><a href="#更换储存地址" class="headerlink" title="更换储存地址"></a>更换储存地址</h3><p>1.可道云官方配置文件给了修改用户存储路径的配置方式<br>配置文件路径：/var/www/kodexplorer/config/<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/2019101618081886.png" srcset="/img/loading.gif"><br>2.按照官方给的教程做就行了，官方没说的就是要给移动后的目录给权限，所以下面细说一下吧。<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201202923.jpg" srcset="/img/loading.gif"><br>3.登录宝塔将可道云目录下的data文复制到或者移动到硬盘目录下<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201203146.jpg" srcset="/img/loading.gif"><br>4.这是复制好以后<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201203257.jpg" srcset="/img/loading.gif"><br>5.给该目录权限<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201204733.jpg" srcset="/img/loading.gif"><br>6.或者可以使用ssh给权限<code>chmod -R 777 /mnt/data/</code><br>7.前往可道云目录文件夹/config下<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201204954.jpg" srcset="/img/loading.gif"><br>8.在此目录新建一个文件define.php<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201205101.jpg" srcset="/img/loading.gif"><br>9.里面填写以下内容<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201205132.jpg" srcset="/img/loading.gif"></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> <br>define(<span class="hljs-string">&#x27;DATA_PATH&#x27;</span>,<span class="hljs-string">&#x27;`/mnt/data/`&#x27;</span>);<br></code></pre></td></tr></table></figure>
+<p>10.<code>/mnt/data/</code>为储存设备的data路径<br>11.到这就已经结束了，重新打开可道云即可</p>
 
-
-
-
-
-
-<div class="category-list">
-  
-  
-  
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjljlpun0001jcu66vxj8fxi" role="tab" data-toggle="collapse" href="#collapse-ckjljlpun0001jcu66vxj8fxi"
-        aria-expanded="false"
-      >
-        hexo
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/hexo/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>8</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjljlpun0001jcu66vxj8fxi" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckjljlpun0001jcu66vxj8fxi">
-    
-    
-    
-      
-      
-        <a href="/2021/01/24/hexo%E9%AB%98%E5%BA%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE/" class="list-group-item list-group-item-action">
-          <span class="category-post">hexo高度自定义友链</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/01/06/%E5%A6%82%E4%BD%95%E8%AE%A9%E8%B0%B7%E6%AD%8C%E6%94%B6%E5%BD%95%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99/" class="list-group-item list-group-item-action">
-          <span class="category-post">如何让谷歌收录你的网站</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2020/12/21/%E7%BD%91%E7%AB%99%E6%B7%BB%E5%8A%A0valine%E8%AF%84%E8%AE%BA/" class="list-group-item list-group-item-action">
-          <span class="category-post">网站添加valine评论</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2020/12/21/%E5%AE%9E%E7%8E%B0%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/" class="list-group-item list-group-item-action">
-          <span class="category-post">实现网站文章加密</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2020/12/21/%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/" class="list-group-item list-group-item-action">
-          <span class="category-post">添加网站访问统计</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2020/08/09/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/" class="list-group-item list-group-item-action">
-          <span class="category-post">个人博客搭建记录日志-更换主题</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2020/08/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-github%E6%89%98%E7%AE%A1/" class="list-group-item list-group-item-action">
-          <span class="category-post">个人博客搭建记录日志-github托管</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2020/08/07/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%E6%97%A5%E5%BF%97-%E5%9F%BA%E7%A1%80%E6%90%AD%E5%BB%BA/" class="list-group-item list-group-item-action">
-          <span class="category-post">个人博客搭建记录日志-基础搭建</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckk3z28q90002lcu67vklfwey" role="tab" data-toggle="collapse" href="#collapse-ckk3z28q90002lcu67vklfwey"
-        aria-expanded="false"
-      >
-        前端
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E5%89%8D%E7%AB%AF/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>4</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckk3z28q90002lcu67vklfwey" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckk3z28q90002lcu67vklfwey">
-    
-    
-    
-      
-      
-        <a href="/2021/02/01/%E6%9B%B4%E6%8D%A2%E5%8F%AF%E9%81%93%E4%BA%91%E5%82%A8%E5%AD%98%E5%9C%B0%E5%9D%80%E4%B8%BA%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/" class="list-group-item list-group-item-action">
-          <span class="category-post">更换可道云储存地址为挂载硬盘</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/01/31/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%8F%AF%E9%81%93%E4%BA%91/" class="list-group-item list-group-item-action">
-          <span class="category-post">自建服务器搭建可道云</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/01/19/js%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E9%A3%98%E9%9B%AA/" class="list-group-item list-group-item-action">
-          <span class="category-post">js实现网站飘雪</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2020/12/21/%E7%AE%80%E5%8D%95%E7%9A%84%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/" class="list-group-item list-group-item-action">
-          <span class="category-post">简单的添加网站运行时间</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjmzscsi00006wu677c41l6a" role="tab" data-toggle="collapse" href="#collapse-ckjmzscsi00006wu677c41l6a"
-        aria-expanded="false"
-      >
-        github
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/github/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>2</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjmzscsi00006wu677c41l6a" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckjmzscsi00006wu677c41l6a">
-    
-    
-    
-      
-      
-        <a href="/2021/01/23/%E5%88%A9%E7%94%A8github-jsDelivr%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/" class="list-group-item list-group-item-action">
-          <span class="category-post">利用github+jsDelivr搭建图床</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2021/01/07/%E5%B0%86%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0github%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80/" class="list-group-item list-group-item-action">
-          <span class="category-post">将域名解析到github仓库地址</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjbfvc220004dou6fmq0e2e0" role="tab" data-toggle="collapse" href="#collapse-ckjbfvc220004dou6fmq0e2e0"
-        aria-expanded="false"
-      >
-        测试
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%B5%8B%E8%AF%95/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjbfvc220004dou6fmq0e2e0" class="collapse in " role="tabpanel"
-       aria-labelledby="heading-ckjbfvc220004dou6fmq0e2e0">
-    
-  
-  
-    
-    
-    <div class="category-sub row">
-      <a
-        class="category-subitem collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckjbfvc2i000adou6er5ibs3h" role="tab" data-toggle="collapse" href="#collapse-ckjbfvc2i000adou6er5ibs3h"
-        aria-expanded="false"
-      >
-        test
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E6%B5%8B%E8%AF%95/test/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckjbfvc2i000adou6er5ibs3h" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckjbfvc2i000adou6er5ibs3h">
-    
-    
-    
-      
-      
-        <a href="/2020/12/13/text/" class="list-group-item list-group-item-action">
-          <span class="category-post">test</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    <div class="category row">
-      <a
-        class="category-item collapsed list-group-item category-item-action col-10 col-md-11"
-        id="heading-ckk2ic17m000d00u6a23zh8mq" role="tab" data-toggle="collapse" href="#collapse-ckk2ic17m000d00u6a23zh8mq"
-        aria-expanded="false"
-      >
-        软件分享
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" class="category-count col-2 col-md-1">
-        <i class="iconfont icon-articles"></i>
-        <span>1</span>
-      </a>
-      <div class="category-collapse">
-        
-          
-  <div id="collapse-ckk2ic17m000d00u6a23zh8mq" class="collapse in" role="tabpanel"
-       aria-labelledby="heading-ckk2ic17m000d00u6a23zh8mq">
-    
-    
-    
-      
-      
-        <a href="/2020/08/10/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/" class="list-group-item list-group-item-action">
-          <span class="category-post">软件分享</span>
-        </a>
-      
-    
-  </div>
-
-        
-      </div>
-    </div>
-  
-</div>
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%89%8D%E7%AB%AF/">前端</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8F%AF%E9%81%93%E4%BA%91/">可道云</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/">云服务器</a>
+                    
+                      <a class="hover-with-bg" href="/tags/linux/">linux</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/01/31/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%8F%AF%E9%81%93%E4%BA%91/">
+                        <span class="hidden-mobile">自建服务器搭建可道云</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "4Ydotyck32aJVRA0CIPTKA1J-gzGzoHsz",
+          app_key: "Av3A64m5LzHcpPoRfQARe72A",
+          placeholder: "说点什么",
+          path: window.location.pathname,
+          avatar: "robohash",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: false,
+          recordIP: false,
+          serverURLs: "https://4ydotyck.lc-cn-n1-shared.com",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -673,9 +541,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 

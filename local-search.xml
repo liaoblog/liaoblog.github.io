@@ -4,6 +4,64 @@
   
   
   <entry>
+    <title>更换可道云储存地址为挂载硬盘</title>
+    <link href="/2021/02/01/%E6%9B%B4%E6%8D%A2%E5%8F%AF%E9%81%93%E4%BA%91%E5%82%A8%E5%AD%98%E5%9C%B0%E5%9D%80%E4%B8%BA%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/"/>
+    <url>/2021/02/01/%E6%9B%B4%E6%8D%A2%E5%8F%AF%E9%81%93%E4%BA%91%E5%82%A8%E5%AD%98%E5%9C%B0%E5%9D%80%E4%B8%BA%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/</url>
+    
+    <content type="html"><![CDATA[<p>自建服务器的空间有限，玩客云有usb接口，我接了一个u盘，硬盘也是可以的，下面开始操作步骤（此文章为自建服务器更换储存设备教程，对云服务器使用者并无帮助）</p><h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.需要一个外接储存设备<br>2.储存设备必须是ext4格式的，linux系统必须是ext格式，否则将会挂载失败，普通u盘或是硬盘不是此格式，需要使用硬盘格式工具进行修改</p><h3 id="挂载硬盘"><a href="#挂载硬盘" class="headerlink" title="挂载硬盘"></a>挂载硬盘</h3><p>1.插入硬盘到设备上<br>2.进入ssh，连接上服务器<br>3.查看有哪些储存设备，ssh键入<code>fdisk -l</code><br>4.可以看到我插入的硬盘是14g，所以是这个，名称叫<code>dev/sdc1</code><br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201204242.jpg"><br>5.将储存设备挂载到服务器上，ssh键入<code>sudo mount /dev/sdc1/mnt</code><br>6.测试是否挂载成功<code>cd /mnt</code>，成功进入即为挂载成功</p><h3 id="更换储存地址"><a href="#更换储存地址" class="headerlink" title="更换储存地址"></a>更换储存地址</h3><p>1.可道云官方配置文件给了修改用户存储路径的配置方式<br>配置文件路径：/var/www/kodexplorer/config/<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/2019101618081886.png"><br>2.按照官方给的教程做就行了，官方没说的就是要给移动后的目录给权限，所以下面细说一下吧。<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201202923.jpg"><br>3.登录宝塔将可道云目录下的data文复制到或者移动到硬盘目录下<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201203146.jpg"><br>4.这是复制好以后<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201203257.jpg"><br>5.给该目录权限<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201204733.jpg"><br>6.或者可以使用ssh给权限<code>chmod -R 777 /mnt/data/</code><br>7.前往可道云目录文件夹/config下<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201204954.jpg"><br>8.在此目录新建一个文件define.php<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201205101.jpg"><br>9.里面填写以下内容<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210201205132.jpg"></p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-meta">&lt;?php</span> <br>define(<span class="hljs-string">&#x27;DATA_PATH&#x27;</span>,<span class="hljs-string">&#x27;`/mnt/data/`&#x27;</span>);<br></code></pre></td></tr></table></figure><p>10.<code>/mnt/data/</code>为储存设备的data路径<br>11.到这就已经结束了，重新打开可道云即可</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>可道云</tag>
+      
+      <tag>云服务器</tag>
+      
+      <tag>linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>自建服务器搭建可道云</title>
+    <link href="/2021/01/31/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%8F%AF%E9%81%93%E4%BA%91/"/>
+    <url>/2021/01/31/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%8F%AF%E9%81%93%E4%BA%91/</url>
+    
+    <content type="html"><![CDATA[<p>某宝买了一个玩客云，店家直接帮刷了linux-ubuntu系统，自带的ssh和宝塔，<a href="http://doc.yunwk.top/web/#/12?page_id=59">使用手册</a>，玩客云全天侯开机一个月电费不到5块钱，利用玩客云搭建一个本地服务器，再使用内网穿透，搭建一个外网访问的云服务器<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/imgyy.jpg"></p><h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>1.可道云依赖php,最后php7以上，这里安装了php7.2<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154312.jpg"><br>2.添加站点<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154448.jpg"><br>3.文本框填入你的域名，这里填了卖家送的域名，根目录默认，php选择刚刚安装的php版本<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154548.jpg"><br>4.点击进入根目录<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154803.jpg"><br>5.下载可道云的服务器端官方包，点击前往<a href="https://kodcloud.com/download/">下载</a><br>6.将包放入网站根目录，然后解压，使用宝塔自带的解压，或者使用ssh连接，用命令解压均可<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131155052.jpg"><br>7.配置好内网穿透，使用域名访问即可登录可道云<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/ert.jpg"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>前端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>可道云</tag>
+      
+      <tag>云服务器</tag>
+      
+      <tag>linux</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>hexo高度自定义友链</title>
     <link href="/2021/01/24/hexo%E9%AB%98%E5%BA%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE/"/>
     <url>/2021/01/24/hexo%E9%AB%98%E5%BA%A6%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%8B%E9%93%BE/</url>
