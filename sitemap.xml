@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://zyxlfl.top/2020/12/21/%E7%AE%80%E5%8D%95%E7%9A%84%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</loc>
+    
+    <lastmod>2021-02-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zyxlfl.top/2021/01/19/js%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E9%A3%98%E9%9B%AA/</loc>
+    
+    <lastmod>2021-02-08</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://zyxlfl.top/2021/01/31/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E5%8F%AF%E9%81%93%E4%BA%91/</loc>
     
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     
   </url>
   
   <url>
     <loc>https://zyxlfl.top/2021/02/01/%E6%9B%B4%E6%8D%A2%E5%8F%AF%E9%81%93%E4%BA%91%E5%82%A8%E5%AD%98%E5%9C%B0%E5%9D%80%E4%B8%BA%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/</loc>
     
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://zyxlfl.top/2021/02/08/Node%E7%89%88%E6%9C%AC%E7%9A%84%E5%8D%87%E7%BA%A7%E5%92%8C%E9%99%8D%E7%BA%A7/</loc>
+    
+    <lastmod>2021-02-08</lastmod>
     
   </url>
   
@@ -65,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://zyxlfl.top/2021/01/19/js%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E9%A3%98%E9%9B%AA/</loc>
-    
-    <lastmod>2021-01-23</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://zyxlfl.top/2021/01/07/%E5%B0%86%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%88%B0github%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80/</loc>
     
     <lastmod>2021-01-23</lastmod>
@@ -94,13 +108,6 @@
   
   <url>
     <loc>https://zyxlfl.top/2020/12/21/%E5%AE%9E%E7%8E%B0%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</loc>
-    
-    <lastmod>2021-01-23</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://zyxlfl.top/2020/12/21/%E7%AE%80%E5%8D%95%E7%9A%84%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E8%BF%90%E8%A1%8C%E6%97%B6%E9%97%B4/</loc>
     
     <lastmod>2021-01-23</lastmod>
     
@@ -130,7 +137,7 @@
 
   <url>
     <loc>https://zyxlfl.top/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -138,133 +145,147 @@
   
   <url>
     <loc>https://zyxlfl.top/tags/testTag1/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/testTag2/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/hexo/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/google/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/sitemap/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/github/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/%E5%9F%9F%E5%90%8D/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/js/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/html/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/jsDelivr/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/ejs/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/comment/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/%E5%8F%AF%E9%81%93%E4%BA%91/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/tags/linux/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zyxlfl.top/tags/node/</loc>
+    <lastmod>2021-02-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zyxlfl.top/tags/npm/</loc>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -273,42 +294,56 @@
   
   <url>
     <loc>https://zyxlfl.top/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/categories/%E6%B5%8B%E8%AF%95/test/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/categories/hexo/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/categories/github/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://zyxlfl.top/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zyxlfl.top/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2021-02-01</lastmod>
+    <loc>https://zyxlfl.top/categories/%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2021-02-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zyxlfl.top/categories/%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2021-02-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://zyxlfl.top/categories/%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3/%E5%90%8E%E7%AB%AF/</loc>
+    <lastmod>2021-02-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

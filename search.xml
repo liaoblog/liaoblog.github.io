@@ -75,6 +75,7 @@
 <h3 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h3><p>1.有错误请评论指出，谢谢，希望文章能够帮助到烂记性的自己和正在观看此博客的你。</p>
 ]]></content>
       <categories>
+        <category>开发相关</category>
         <category>前端</category>
       </categories>
       <tags>
@@ -220,6 +221,7 @@
 <h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><p>1.没有效果，请确认网页是否已载入JQurey，如果没有请在下雪代码之前引入JQ即可：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://libs.baidu.com/jquery/1.8.3/jquery.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://libs.baidu.com/jquery/1.8.3/jquery.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br></code></pre></td></tr></table></figure>]]></content>
       <categories>
+        <category>开发相关</category>
         <category>前端</category>
       </categories>
       <tags>
@@ -278,7 +280,8 @@
 <h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>1.可道云依赖php,最后php7以上，这里安装了php7.2<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154312.jpg"><br>2.添加站点<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154448.jpg"><br>3.文本框填入你的域名，这里填了卖家送的域名，根目录默认，php选择刚刚安装的php版本<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154548.jpg"><br>4.点击进入根目录<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131154803.jpg"><br>5.下载可道云的服务器端官方包，点击前往<a href="https://kodcloud.com/download/">下载</a><br>6.将包放入网站根目录，然后解压，使用宝塔自带的解压，或者使用ssh连接，用命令解压均可<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210131155052.jpg"><br>7.配置好内网穿透，使用域名访问即可登录可道云<br><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/ert.jpg"></p>
 ]]></content>
       <categories>
-        <category>前端</category>
+        <category>开发相关</category>
+        <category>后端</category>
       </categories>
       <tags>
         <tag>可道云</tag>
@@ -297,12 +300,28 @@
 <p>10.<code>/mnt/data/</code>为储存设备的data路径<br>11.到这就已经结束了，重新打开可道云即可</p>
 ]]></content>
       <categories>
-        <category>前端</category>
+        <category>开发相关</category>
+        <category>后端</category>
       </categories>
       <tags>
         <tag>可道云</tag>
         <tag>云服务器</tag>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Node版本的升级和降级</title>
+    <url>/2021/02/08/Node%E7%89%88%E6%9C%AC%E7%9A%84%E5%8D%87%E7%BA%A7%E5%92%8C%E9%99%8D%E7%BA%A7/</url>
+    <content><![CDATA[<p>在开发的工程中，我们可能需要经常切换node版本来应对不同的开发环境，所以需要经常使用不同版本的node<br>一、安装npm插件n ,通过n模块来管理node版本</p>
+<h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>1、全局安装n模块<br><code>npm instlal -g n</code><br>2、安装当前稳定版本<br><code>n stable或者sudo n stable</code><br>3、安装最新版本的<br><code>n latest或者sudo n latest</code><br>4、安装指定版本的node<br><code>n v8.16.0</code><br>5、卸载指定的node版本<br><code>n rm v8.16.0</code><br>二、使用nvm管理node版本<br>1、安装nvm<br><code>brew install nvm</code><br>2、使用nvm安装node版本<br>安装最新版本<br><code>nvm isntall node</code><br>安装指定版本<br><code>nvm install 8.16.0</code><br>3、查看所有版本<br><code>nvm ls</code><br>4、切换node版本<br>使用最新版本<br><code>nvm use node</code><br>使用指定版本<br><code>nvm use 10.16.2</code><br>通常我会使用第二种方式<br>例如：我在一个项目中使用的是node6.13.2,新项目使用的是node8.16.0,<br>先要安装<code>node@8.16.0，nvm install 8.16.0</code>，<br>然后，<code>nvm use 8.16.0</code></p>
+]]></content>
+      <categories>
+        <category>开发相关</category>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>npm</tag>
       </tags>
   </entry>
 </search>

@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Node版本的升级和降级</title>
+    <link href="/2021/02/08/Node%E7%89%88%E6%9C%AC%E7%9A%84%E5%8D%87%E7%BA%A7%E5%92%8C%E9%99%8D%E7%BA%A7/"/>
+    <url>/2021/02/08/Node%E7%89%88%E6%9C%AC%E7%9A%84%E5%8D%87%E7%BA%A7%E5%92%8C%E9%99%8D%E7%BA%A7/</url>
+    
+    <content type="html"><![CDATA[<p>在开发的工程中，我们可能需要经常切换node版本来应对不同的开发环境，所以需要经常使用不同版本的node<br>一、安装npm插件n ,通过n模块来管理node版本</p><h3 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h3><p>1、全局安装n模块<br><code>npm instlal -g n</code><br>2、安装当前稳定版本<br><code>n stable或者sudo n stable</code><br>3、安装最新版本的<br><code>n latest或者sudo n latest</code><br>4、安装指定版本的node<br><code>n v8.16.0</code><br>5、卸载指定的node版本<br><code>n rm v8.16.0</code><br>二、使用nvm管理node版本<br>1、安装nvm<br><code>brew install nvm</code><br>2、使用nvm安装node版本<br>安装最新版本<br><code>nvm isntall node</code><br>安装指定版本<br><code>nvm install 8.16.0</code><br>3、查看所有版本<br><code>nvm ls</code><br>4、切换node版本<br>使用最新版本<br><code>nvm use node</code><br>使用指定版本<br><code>nvm use 10.16.2</code><br>通常我会使用第二种方式<br>例如：我在一个项目中使用的是node6.13.2,新项目使用的是node8.16.0,<br>先要安装<code>node@8.16.0，nvm install 8.16.0</code>，<br>然后，<code>nvm use 8.16.0</code></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>开发相关</category>
+      
+      <category>后端</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>node</tag>
+      
+      <tag>npm</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>更换可道云储存地址为挂载硬盘</title>
     <link href="/2021/02/01/%E6%9B%B4%E6%8D%A2%E5%8F%AF%E9%81%93%E4%BA%91%E5%82%A8%E5%AD%98%E5%9C%B0%E5%9D%80%E4%B8%BA%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/"/>
     <url>/2021/02/01/%E6%9B%B4%E6%8D%A2%E5%8F%AF%E9%81%93%E4%BA%91%E5%82%A8%E5%AD%98%E5%9C%B0%E5%9D%80%E4%B8%BA%E6%8C%82%E8%BD%BD%E7%A1%AC%E7%9B%98/</url>
@@ -13,7 +42,9 @@
     
     <categories>
       
-      <category>前端</category>
+      <category>开发相关</category>
+      
+      <category>后端</category>
       
     </categories>
     
@@ -42,7 +73,9 @@
     
     <categories>
       
-      <category>前端</category>
+      <category>开发相关</category>
+      
+      <category>后端</category>
       
     </categories>
     
@@ -128,6 +161,8 @@
     
     
     <categories>
+      
+      <category>开发相关</category>
       
       <category>前端</category>
       
@@ -288,6 +323,8 @@
     
     
     <categories>
+      
+      <category>开发相关</category>
       
       <category>前端</category>
       
