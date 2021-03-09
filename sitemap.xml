@@ -60,13 +60,6 @@
 
   
   <url>
-    <loc>https://zyxlfl.top/tags/%E7%BE%8E%E5%9B%BE/</loc>
-    <lastmod>2021-03-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://zyxlfl.top/tags/%E9%AC%BC%E8%B0%B7%E5%85%AB%E8%8D%92/</loc>
     <lastmod>2021-03-09</lastmod>
     <changefreq>daily</changefreq>
@@ -94,17 +87,24 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://zyxlfl.top/tags/%E7%BE%8E%E5%9B%BE/</loc>
+    <lastmod>2021-03-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://zyxlfl.top/categories/%E7%BE%8E%E5%9B%BE/</loc>
+    <loc>https://zyxlfl.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5/</loc>
     <lastmod>2021-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://zyxlfl.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5/</loc>
+    <loc>https://zyxlfl.top/categories/%E7%BE%8E%E5%9B%BE/</loc>
     <lastmod>2021-03-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
