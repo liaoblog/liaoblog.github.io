@@ -137,6 +137,13 @@
 
   
   <url>
+    <loc>https://www.xgamego.top/tags/%E7%BE%8E%E5%9B%BE/</loc>
+    <lastmod>2021-03-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xgamego.top/tags/%E9%AC%BC%E8%B0%B7%E5%85%AB%E8%8D%92mod/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
@@ -145,13 +152,6 @@
   
   <url>
     <loc>https://www.xgamego.top/tags/mod/</loc>
-    <lastmod>2021-03-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xgamego.top/tags/%E7%BE%8E%E5%9B%BE/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -181,14 +181,14 @@
 
   
   <url>
-    <loc>https://www.xgamego.top/categories/%E6%B8%B8%E6%88%8FMOD/</loc>
+    <loc>https://www.xgamego.top/categories/%E7%BE%8E%E5%9B%BE/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.xgamego.top/categories/%E7%BE%8E%E5%9B%BE/</loc>
+    <loc>https://www.xgamego.top/categories/%E6%B8%B8%E6%88%8FMOD/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -202,14 +202,14 @@
   </url>
   
   <url>
-    <loc>https://www.xgamego.top/categories/%E6%B8%B8%E6%88%8FMOD/%E9%AC%BC%E8%B0%B7%E5%85%AB%E8%8D%92/</loc>
+    <loc>https://www.xgamego.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.xgamego.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5/</loc>
+    <loc>https://www.xgamego.top/categories/%E6%B8%B8%E6%88%8FMOD/%E9%AC%BC%E8%B0%B7%E5%85%AB%E8%8D%92/</loc>
     <lastmod>2021-03-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
