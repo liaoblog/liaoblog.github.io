@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>鬼谷八荒男同mod只会刷新男性npc</title>
+    <link href="/ggnt.html"/>
+    <url>/ggnt.html</url>
+    
+    <content type="html"><![CDATA[<p>让游戏内只会刷新男性npc，<code>安装mod后需要开新档</code><br></p><a class="btn" href="http://xgsyun.cn1.utools.club/externalLinksController/chain/ntmod.zip?ckey=SU4bfbz9G9oBYmxn8heX7GN%2Fz0Ri731f4jyGvd6e%2BOfn7%2Bq3%2BuQg%2FEmJjVDi%2F6hZ"  title="纯净无捆绑下载" target="_blank">点击下载</a><a class="btn" href="https://www.downkuai.com/soft/131931.html"  title="懂的都懂" target="_blank">彩蛋</a><a class="btn" href="/links/"  title="感谢您的支持" target="_blank">捐助本站</a><h3 id="鬼谷八荒男同mod介绍"><a href="#鬼谷八荒男同mod介绍" class="headerlink" title="鬼谷八荒男同mod介绍"></a>鬼谷八荒男同mod介绍</h3><p>男同mod只会刷新男性npc，懂的都懂，喜欢的玩家不要错过下载<br><img src="https://img.downkuai.com//uppic/20210324/4275555096e7eb4ba863f441d3f03ad6.jpg"></p><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>1.退出Steam。<br>2.把SteamLibrary\steamapps\common裡的遊戲資料夾”鬼谷八荒”改成英文，例如我这里改成“guigubahuang”。<br>3.用能編輯文字文件的工具修改SteamLibrary\steamapps 資料夾內appmanifest_1468810.acf這個檔案，把        “installdir”                “鬼谷八荒” 這行改成 “installdir”                “guigubahuang(剛剛改的英文名)”。（注意！！！！！不是改     “name”      “鬼谷八荒”     这行！！！）<br>4.存檔後重新啟動Steam，應該就能正常啟動遊戲。接著應該就能正常運行MelonLoader了。</p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>1.下载整合包，解压到游戏根目录guigubahuang（刚刚改的英文名）文件夹里面。<br>2.启动installer.exe，完成后就进入下一步。<br>3.然后就可以启动游戏了，第一次启动会稍微慢一点，耐心等待一下。（这一步最好挂个梯子，保证网络能连上github）<br>（如果mod安装成功，开新档后，第一个关卡中两个对峙的修仙者都是男性，就表示安装成功了。）</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>游戏MOD</category>
+      
+      <category>鬼谷八荒</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>鬼谷八荒mod</tag>
+      
+      <tag>mod</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>鬼谷绅士立绘mod全替换带双修结婚图</title>
     <link href="/lsp1.html"/>
     <url>/lsp1.html</url>
