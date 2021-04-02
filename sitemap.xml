@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.xgamego.top/zhuhanbox.html</loc>
+    
+    <lastmod>2021-04-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.xgamego.top/ggdudou.html</loc>
     
     <lastmod>2021-04-01</lastmod>
@@ -283,6 +290,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://www.xgamego.top/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -336,6 +350,13 @@
   
   <url>
     <loc>https://www.xgamego.top/categories/%E6%B8%B8%E6%88%8F%E6%95%99%E7%A8%8B%E6%94%BB%E7%95%A5/%E9%AC%BC%E8%B0%B7%E5%85%AB%E8%8D%92/</loc>
+    <lastmod>2021-04-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xgamego.top/categories/%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2021-04-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
