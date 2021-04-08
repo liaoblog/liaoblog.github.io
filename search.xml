@@ -681,4 +681,22 @@
         <tag>破解游戏</tag>
       </tags>
   </entry>
+  <entry>
+    <title>office2019专业版+激活工具</title>
+    <url>/office2019.html</url>
+    <content><![CDATA[<p>office2019需要激活码才能正常使用，而且office2019密钥价格不菲。下面带来破解方法，以及office2019本体，绝对能永久激活office2019，需要的自行下载</p>
+<h3 id="视频教程-已获取UP主授权"><a href="#视频教程-已获取UP主授权" class="headerlink" title="视频教程-已获取UP主授权"></a>视频教程-已获取UP主授权</h3><a class="btn" href="https://www.bilibili.com/video/BV1L54y1b74d"  title="点击前往" target="_blank">原视频地址</a><br/>
+<iframe src="//player.bilibili.com/player.html?aid=845008141&bvid=BV1L54y1b74d&cid=321553817&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="office2019下载链接"><a href="#office2019下载链接" class="headerlink" title="office2019下载链接"></a>office2019下载链接</h3><a class="btn" href="https://pan.baidu.com/s/1UWSv3Ci7Hy4lLsvM3sjXdA"  title="点击前往" target="_blank">点击下载-提取码6666</a>
+<p><img src="https://cdn.jsdelivr.net/gh/liaoblog/img@master/blogpage/Dingtalk_20210408221648.jpg"></p>
+<h3 id="激活文件文本"><a href="#激活文件文本" class="headerlink" title="激活文件文本"></a>激活文件文本</h3><figure class="highlight txt"><table><tr><td class="code"><pre><code class="hljs txt">@echo off<br>(cd /d &quot;%~dp0&quot;)&amp;&amp;(NET FILE||(powershell start-process -FilePath &#x27;%0&#x27; -verb runas)&amp;&amp;(exit /B)) &gt;NUL 2&gt;&amp;1<br>title Office 2019 Activator r/Piracy<br>echo Converting... &amp; mode 40,25<br>(if exist &quot;%ProgramFiles%\Microsoft Office\Office16\ospp.vbs&quot; cd /d &quot;%ProgramFiles%\Microsoft Office\Office16&quot;)&amp;(if exist &quot;%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs&quot; cd /d &quot;%ProgramFiles(x86)%\Microsoft Office\Office16&quot;)&amp;(for /f %%x in (&#x27;dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms&#x27;) do cscript ospp.vbs /inslic:&quot;..\root\Licenses16\%%x&quot; &gt;nul)&amp;(for /f %%x in (&#x27;dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms&#x27;) do cscript ospp.vbs /inslic:&quot;..\root\Licenses16\%%x&quot; &gt;nul)<br>cscript //nologo ospp.vbs /unpkey:6MWKP &gt;nul&amp;cscript //nologo ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP &gt;nul&amp;set i=1<br>server<br>if %i%==1 set KMS_Sev=kms7.MSGuides.com<br>if %i%==2 set KMS_Sev=kms8.MSGuides.com<br>if %i%==3 set KMS_Sev=kms9.MSGuides.com<br>cscript //nologo ospp.vbs /sethst:%KMS_Sev% &gt;nul<br>echo %KMS_Sev% &amp; echo Activating...<br>cscript //nologo ospp.vbs /act | find /i &quot;successful&quot; &amp;&amp; (echo Complete) || (echo Trying another KMS Server &amp; set /a i+=1 &amp; goto server)<br>pause &gt;nul<br>exit<br></code></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>PC软件资源</category>
+      </categories>
+      <tags>
+        <tag>office</tag>
+        <tag>破解</tag>
+      </tags>
+  </entry>
 </search>
