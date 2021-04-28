@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.xgamego.top/zhaozyapp.html</loc>
+    
+    <lastmod>2021-04-28</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.xgamego.top/sjxjj.html</loc>
     
     <lastmod>2021-04-28</lastmod>
@@ -439,6 +446,20 @@
   
   <url>
     <loc>https://www.xgamego.top/tags/%E5%B0%8F%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2021-04-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xgamego.top/tags/%E8%B5%84%E6%BA%90/</loc>
+    <lastmod>2021-04-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xgamego.top/tags/%E7%A3%81%E5%8A%9B/</loc>
     <lastmod>2021-04-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
